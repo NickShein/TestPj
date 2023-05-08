@@ -1,0 +1,9 @@
+main{
+  height: 100%;
+}
+
+.navbar-menu{
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}

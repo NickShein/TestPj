@@ -1,0 +1,32 @@
+<div class="container">
+  <app-header></app-header>
+    <main>
+      <div class="navbar-menu">
+        <mat-toolbar color="primary">
+          <mat-toolbar-row>
+            <button mat-icon-button>
+              <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            </button>
+            <h1>Elementals</h1>
+          </mat-toolbar-row>
+        </mat-toolbar>
+      </div>
+      <mat-sidenav-container>
+        <mat-sidenav #sidenav mode="side">
+          <mat-nav-list>
+            <a mat-list-item routerLink="/fire">🔥 Fire</a>
+            <a mat-list-item routerLink="/wind">💨 Wind</a>
+            <a mat-list-item routerLink="/water">💧 Water</a>
+            <a mat-list-item routerLink="/earth">⛰️ Earth</a>
+          </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <div style="height: 83.8vh">
+          <router-outlet>
+          </router-outlet>
+        </div>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </main>
+<app-footer></app-footer>
+</div>

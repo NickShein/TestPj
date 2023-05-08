@@ -1,0 +1,8 @@
+<div class="container">
+  <h1 class="visitors-counter" *ngIf="isLoaded;else counterValue">
+    <span>This page was visited </span><span class="visitors-number">{{visitorNumber}}</span><span>times</span>
+  </h1>
+  <ng-template #counterValue>
+    <app-loader></app-loader>
+  </ng-template>
+</div>
